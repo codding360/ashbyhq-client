@@ -1,7 +1,7 @@
 import { ConfigOptions, Status } from '@/types/global';
 import {ApplicationService, JobService, CandidateService} from "@/services";
 
-export default class AshbyClient {
+export class AshbyClient {
     public candidate: CandidateService;
     public job: JobService;
     public application: ApplicationService;
@@ -13,4 +13,9 @@ export default class AshbyClient {
     }
 }
 
-export { AshbyClient, Status }
+// Export types and enums
+export type { ConfigOptions } from '@/types/global';
+export { Status } from '@/types/global';
+
+// Create a default export as well
+export default AshbyClient;
