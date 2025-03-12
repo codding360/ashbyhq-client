@@ -1,4 +1,4 @@
-import axios, { AxiosError, AxiosInstance, AxiosResponse, AxiosBasicCredentials, HttpStatusCode } from 'axios';
+import axios, { AxiosError, AxiosInstance, AxiosBasicCredentials, HttpStatusCode } from 'axios';
 import { Errors } from '../enums/errors.enum';
 
 import { ConfigOptions } from '../types/global';
