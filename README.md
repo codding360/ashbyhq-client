@@ -13,7 +13,7 @@ npm install ashbyhq-client
 First, initialize the client with your API key:
 
 ```typescript
-import AshbyClient from 'ashbyhq';
+import AshbyClient from 'ashbyhq-client';
 
 const client = new AshbyClient({
   auth: {
