@@ -68,12 +68,12 @@ export class ApiService {
   }
 
   // Expose the axios instance for internal use by services
-  public async post<T, D>(url: string, data: D): Promise<T> {
+  protected async post<T, D>(url: string, data: D): Promise<T> {
     const response = await this.axiosInstance.post<T>(url, data);
     return response.data;
   }
 
-  public async upload<T>(url: string, data: FormData): Promise<T> {
+  protected async upload<T>(url: string, data: FormData): Promise<T> {
     const response = await this.axiosInstance.post<T>(url, data, {
       headers: {
         'Accept': 'application/json',

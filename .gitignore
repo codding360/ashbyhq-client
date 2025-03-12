@@ -50,6 +50,6 @@ coverage/
 
 # Output of 'npm pack'
 *.tgz
-
+test.ts
 # Yarn Integrity file
 .yarn-integrity 
